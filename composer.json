@@ -1,6 +1,6 @@
 {
     "name": "cstaf/cakephp-swagger",
-    "description": "Instant Swagger documentation for your CakePHP 4.x APIs",
+    "description": "Instant Swagger documentation for your CakePHP 5.x APIs",
     "type": "cakephp-plugin",
     "license": "MIT",
     "require": {
