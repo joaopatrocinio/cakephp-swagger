@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Test\TestCase\Controller;
+namespace Cstaf\Swagger\Test\TestCase\Controller;
 
 use Cake\TestSuite\IntegrationTestCase;
 

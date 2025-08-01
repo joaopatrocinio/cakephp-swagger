@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Controller;
+namespace Cstaf\Swagger\Controller;
 
 use Cake\Controller\Controller as BaseController;
 use Cake\Core\Configure;

@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Shell;
+namespace Cstaf\Swagger\Shell;
 
-use Alt3\Swagger\Controller\AppController;
-use Alt3\Swagger\Lib\SwaggerTools;
+use Cstaf\Swagger\Controller\AppController;
+use Cstaf\Swagger\Lib\SwaggerTools;
 use Cake\Console\ConsoleOptionParser;
 use Cake\Console\Shell;
 use Cake\Core\Configure;

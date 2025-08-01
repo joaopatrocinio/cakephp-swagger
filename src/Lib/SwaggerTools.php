@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Lib;
+namespace Cstaf\Swagger\Lib;
 
 use Cake\Core\Configure;
 use Cake\Http\Exception\InternalErrorException;

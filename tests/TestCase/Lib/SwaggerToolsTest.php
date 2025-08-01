@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Test\TestCase\Lib;
+namespace Cstaf\Swagger\Test\TestCase\Lib;
 
-use Alt3\Swagger\Controller\AppController;
-use Alt3\Swagger\Lib\SwaggerTools;
+use Cstaf\Swagger\Controller\AppController;
+use Cstaf\Swagger\Lib\SwaggerTools;
 use Cake\Core\Configure;
 use Cake\Filesystem\File;
 use Cake\TestSuite\TestCase;
@@ -13,7 +13,7 @@ use stdClass;
 class SwaggerToolsTest extends TestCase
 {
     /**
-     * @var \Alt3\Swagger\Lib\SwaggerTools Swaggertools instance.
+     * @var \Cstaf\Swagger\Lib\SwaggerTools Swaggertools instance.
      */
     protected $lib;
 

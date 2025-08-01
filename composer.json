@@ -1,5 +1,5 @@
 {
-    "name": "alt3/cakephp-swagger",
+    "name": "cstaf/cakephp-swagger",
     "description": "Instant Swagger documentation for your CakePHP 4.x APIs",
     "type": "cakephp-plugin",
     "license": "MIT",
@@ -12,12 +12,12 @@
         "phpunit/phpunit": "^7.0"
     },
     "support": {
-        "issues": "https://github.com/alt3/cakephp-swagger/issues",
-        "source": "https://github.com/alt3/cakephp-swagger"
+        "issues": "https://github.com/joaopatrocinio/cakephp-swagger/issues",
+        "source": "https://github.com/joaopatrocinio/cakephp-swagger"
     },
     "autoload": {
         "psr-4": {
-            "Alt3\\Swagger\\": "src"
+            "Cstaf\\Swagger\\": "src"
         },
         "files": [
             "aliases.php"
@@ -25,7 +25,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Alt3\\Swagger\\Test\\": "tests"
+            "Cstaf\\Swagger\\Test\\": "tests"
         }
     }
 }

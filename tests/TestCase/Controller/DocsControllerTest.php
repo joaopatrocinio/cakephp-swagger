@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Test\TestCase\Controller;
+namespace Cstaf\Swagger\Test\TestCase\Controller;
 
-use Alt3\Swagger\Controller\DocsController;
-use Alt3\Swagger\Test\App\Application;
+use Cstaf\Swagger\Controller\DocsController;
+use Cstaf\Swagger\Test\App\Application;
 use Cake\Routing\Router;
 use Cake\TestSuite\TestCase;
 use stdClass;
@@ -12,7 +12,7 @@ use stdClass;
 class DocsControllerTest extends TestCase
 {
     /**
-     * @var \Alt3\Swagger\Controller\DocsController
+     * @var \Cstaf\Swagger\Controller\DocsController
      */
     protected $controller;
 

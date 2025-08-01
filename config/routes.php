@@ -6,11 +6,11 @@ use Cake\Routing\Router;
 /*
  * Connect routes using configuration file, otherwise use defaults:
  *
- * - UI, defaults to /alt3/swagger
- * - docs, defaults to /alt3/swagger/docs
- * - per library document, defaults to /alt3/swagger/docs/:id
+ * - UI, defaults to /swagger
+ * - docs, defaults to /swagger/docs
+ * - per library document, defaults to /swagger/docs/:id
  */
-$routes->plugin('Alt3/Swagger', [
+$routes->plugin('Cstaf/Swagger', [
     'path' => '/',
 ], function (\Cake\Routing\RouteBuilder $routes) {
 
@@ -18,12 +18,12 @@ $routes->plugin('Alt3/Swagger', [
     if (Configure::read('Swagger.ui.route')) {
         $routes->connect(
             Configure::read('Swagger.ui.route'),
-            ['plugin' => 'Alt3/Swagger', 'controller' => 'Ui', 'action' => 'index']
+            ['plugin' => 'Cstaf/Swagger', 'controller' => 'Ui', 'action' => 'index']
         );
     } else {
         $routes->connect(
-            '/alt3/swagger/',
-            ['plugin' => 'Alt3/Swagger', 'controller' => 'Ui', 'action' => 'index']
+            '/cstaf/swagger/',
+            ['plugin' => 'Cstaf/Swagger', 'controller' => 'Ui', 'action' => 'index']
         );
     }
 
@@ -31,24 +31,24 @@ $routes->plugin('Alt3/Swagger', [
     if (Configure::read('Swagger.docs.route')) {
         $routes->connect(
             Configure::read('Swagger.docs.route'),
-            ['plugin' => 'Alt3/Swagger', 'controller' => 'Docs', 'action' => 'index']
+            ['plugin' => 'Cstaf/Swagger', 'controller' => 'Docs', 'action' => 'index']
         );
 
         $routes->connect(
             Configure::read('Swagger.docs.route') . '{id}',
-            ['plugin' => 'Alt3/Swagger', 'controller' => 'Docs', 'action' => 'index']
+            ['plugin' => 'Cstaf/Swagger', 'controller' => 'Docs', 'action' => 'index']
         )
             ->setPatterns(['id' => '\w+'])
             ->setPass(['id']);
     } else {
         $routes->connect(
-            '/alt3/swagger/docs',
-            ['plugin' => 'Alt3/Swagger', 'controller' => 'Docs', 'action' => 'index']
+            '/cstaf/swagger/docs',
+            ['plugin' => 'Cstaf/Swagger', 'controller' => 'Docs', 'action' => 'index']
         );
 
         $routes->connect(
-            '/alt3/swagger/docs/{id}',
-            ['plugin' => 'Alt3/Swagger', 'controller' => 'Docs', 'action' => 'index']
+            '/cstaf/swagger/docs/{id}',
+            ['plugin' => 'Cstaf/Swagger', 'controller' => 'Docs', 'action' => 'index']
         )
             ->setPatterns(['id' => '\w+'])
             ->setPass(['id']);

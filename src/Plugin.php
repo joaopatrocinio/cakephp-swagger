@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger;
+namespace Cstaf\Swagger;
 
 use Cake\Core\BasePlugin;
 
 /**
  * Class Plugin
- * @package Alt3\Swagger
+ * @package Cstaf\Swagger
  */
 class Plugin extends BasePlugin
 {

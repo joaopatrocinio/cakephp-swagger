@@ -25,13 +25,13 @@ if (!isset($uiConfig['api_selector'])) {
 
     // favicons
     echo $this->Html->meta([
-        'link' => $this->Url->assetUrl('Alt3/Swagger./images/favicon-32x32.png', ['fullBase' => true]),
+        'link' => $this->Url->assetUrl('Cstaf/Swagger./images/favicon-32x32.png', ['fullBase' => true]),
         'rel' => 'icon',
         'sizes' => '32x32',
         'type' => 'image/png',
     ]);
     echo $this->Html->meta([
-        'link' => $this->Url->assetUrl('Alt3/Swagger./images/favicon-16x16.png', ['fullBase' => true]),
+        'link' => $this->Url->assetUrl('Cstaf/Swagger./images/favicon-16x16.png', ['fullBase' => true]),
         'rel' => 'icon',
         'sizes' => '16x16',
         'type' => 'image/png'
@@ -39,33 +39,33 @@ if (!isset($uiConfig['api_selector'])) {
 
     // screen stylesheets
     echo $this->Html->css([
-        'Alt3/Swagger.typography.css',
-        'Alt3/Swagger.reset.css',
-        'Alt3/Swagger.screen.css',
+        'Cstaf/Swagger.typography.css',
+        'Cstaf/Swagger.reset.css',
+        'Cstaf/Swagger.screen.css',
     ], ['media' => 'screen', 'once' => false, 'fullBase' => true]);
 
     // print stylesheet
     echo $this->Html->css([
-        'Alt3/Swagger.reset.css',
-        'Alt3/Swagger.print.css',
+        'Cstaf/Swagger.reset.css',
+        'Cstaf/Swagger.print.css',
     ], ['media' => 'print', 'once' => false, 'fullBase' => true]);
 
     // javascript libraries
     echo $this->Html->script([
-		'Alt3/Swagger./lib/object-assign-pollyfill.js',
-        'Alt3/Swagger./lib/jquery-1.8.0.min.js',
-        'Alt3/Swagger./lib/jquery.slideto.min.js',
-        'Alt3/Swagger./lib/jquery.wiggle.min.js',
-        'Alt3/Swagger./lib/jquery.ba-bbq.min.js',
-        'Alt3/Swagger./lib/handlebars-4.0.5.js',
-        'Alt3/Swagger./lib/lodash.min.js',
-        'Alt3/Swagger./lib/backbone-min.js',
-        'Alt3/Swagger./swagger-ui.js',
-        'Alt3/Swagger./lib/highlight.9.1.0.pack.js',
-        'Alt3/Swagger./lib/highlight.9.1.0.pack_extended.js',
-        'Alt3/Swagger./lib/jsoneditor.min.js',
-        'Alt3/Swagger./lib/marked.js',
-        'Alt3/Swagger./lib/swagger-oauth.js'
+		'Cstaf/Swagger./lib/object-assign-pollyfill.js',
+        'Cstaf/Swagger./lib/jquery-1.8.0.min.js',
+        'Cstaf/Swagger./lib/jquery.slideto.min.js',
+        'Cstaf/Swagger./lib/jquery.wiggle.min.js',
+        'Cstaf/Swagger./lib/jquery.ba-bbq.min.js',
+        'Cstaf/Swagger./lib/handlebars-4.0.5.js',
+        'Cstaf/Swagger./lib/lodash.min.js',
+        'Cstaf/Swagger./lib/backbone-min.js',
+        'Cstaf/Swagger./swagger-ui.js',
+        'Cstaf/Swagger./lib/highlight.9.1.0.pack.js',
+        'Cstaf/Swagger./lib/highlight.9.1.0.pack_extended.js',
+        'Cstaf/Swagger./lib/jsoneditor.min.js',
+        'Cstaf/Swagger./lib/marked.js',
+        'Cstaf/Swagger./lib/swagger-oauth.js'
     ], ['fullBase' => true]);
 
     ?>

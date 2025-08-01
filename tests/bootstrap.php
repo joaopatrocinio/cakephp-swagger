@@ -47,7 +47,7 @@ mb_internal_encoding('UTF-8');
 
 Configure::write('debug', true);
 Configure::write('App', [
-    'namespace' => 'Alt3\Swagger\Test\App',
+    'namespace' => 'Cstaf\Swagger\Test\App',
     'encoding' => 'UTF-8',
     'base' => false,
     'baseUrl' => false,

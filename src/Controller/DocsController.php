@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Controller;
+namespace Cstaf\Swagger\Controller;
 
-use Alt3\Swagger\Lib\SwaggerTools;
+use Cstaf\Swagger\Lib\SwaggerTools;
 use Cake\Routing\Router;
 
 class DocsController extends AppController
@@ -65,7 +65,7 @@ class DocsController extends AppController
             static::$apiResponseBody['data'][] = [
                 'document' => $document,
                 'link' => Router::url([
-                    'plugin' => 'Alt3/Swagger',
+                    'plugin' => 'Cstaf/Swagger',
                     'controller' => 'Docs',
                     'action' => 'index',
                     $document,

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Test\App;
+namespace Cstaf\Swagger\Test\App;
 
-use Alt3\Swagger\Plugin;
+use Cstaf\Swagger\Plugin;
 use Cake\Http\BaseApplication;
 use Cake\Http\MiddlewareQueue;
 use Cake\Routing\Middleware\AssetMiddleware;

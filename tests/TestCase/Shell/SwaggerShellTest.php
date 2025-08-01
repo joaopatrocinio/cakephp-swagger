@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Test\TestCase\Shell;
+namespace Cstaf\Swagger\Test\TestCase\Shell;
 
-use Alt3\Swagger\Shell\SwaggerShell;
+use Cstaf\Swagger\Shell\SwaggerShell;
 use Cake\TestSuite\TestCase;
 use stdClass;
 
 class SwaggerShellTest extends TestCase
 {
     /**
-     * @var \Alt3\Swagger\Shell\SwaggerShell SwaggerShell instance.
+     * @var \Cstaf\Swagger\Shell\SwaggerShell SwaggerShell instance.
      */
     protected $shell;
 

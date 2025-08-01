@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Alt3\Swagger\Controller;
+namespace Cstaf\Swagger\Controller;
 
 use Cake\Routing\Router;
 
@@ -36,7 +36,7 @@ class UiController extends AppController
         $defaultDocument = key($this->config['library']);
 
         return Router::url([
-            'plugin' => 'Alt3/Swagger',
+            'plugin' => 'Cstaf/Swagger',
             'controller' => 'Docs',
             'action' => 'index',
             $defaultDocument,
