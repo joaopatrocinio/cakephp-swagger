@@ -10,7 +10,7 @@ use Cake\Routing\Router;
  * - docs, defaults to /alt3/swagger/docs
  * - per library document, defaults to /alt3/swagger/docs/:id
  */
-Router::plugin('Alt3/Swagger', [
+$routes->plugin('Alt3/Swagger', [
     'path' => '/',
 ], function (\Cake\Routing\RouteBuilder $routes) {
 
@@ -35,7 +35,7 @@ Router::plugin('Alt3/Swagger', [
         );
 
         $routes->connect(
-            Configure::read('Swagger.docs.route') . ':id',
+            Configure::read('Swagger.docs.route') . '{id}',
             ['plugin' => 'Alt3/Swagger', 'controller' => 'Docs', 'action' => 'index']
         )
             ->setPatterns(['id' => '\w+'])
@@ -47,7 +47,7 @@ Router::plugin('Alt3/Swagger', [
         );
 
         $routes->connect(
-            '/alt3/swagger/docs/:id',
+            '/alt3/swagger/docs/{id}',
             ['plugin' => 'Alt3/Swagger', 'controller' => 'Docs', 'action' => 'index']
         )
             ->setPatterns(['id' => '\w+'])

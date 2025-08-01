@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace Alt3\Swagger\Lib;
 
 use Cake\Core\Configure;
-use Cake\Filesystem\File;
 use Cake\Http\Exception\InternalErrorException;
 use Cake\Http\Exception\NotFoundException;
 
@@ -32,9 +31,8 @@ class SwaggerTools
             if (!file_exists($filePath)) {
                 throw new NotFoundException("Swagger json document was not found on filesystem: $filePath");
             }
-            $fh = new File($filePath);
-
-            return $fh->read();
+            
+            return file_get_contents($filePath);
         }
 
         // otherwise crawl-generate a fresh document
